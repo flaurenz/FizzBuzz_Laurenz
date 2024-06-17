@@ -168,3 +168,24 @@ classDiagram
 - Thabo: Insgesamt eine solide App.
 - Papa: Ich hatte viel Spaß und würde es wieder spielen.
 - Mama: Eine gute App, besonders geeignet für kurze Spielsessions zwischendurch.
+
+### Fehlerprotokoll für FBS_Script.cs
+
+Das folgende Fehlerprotokoll dokumentiert mögliche Fehler, die während der Ausführung des FBS_Scripts auftreten können. Es enthält die Beschreibung des Fehlers, die Bedingungen, unter denen der Fehler auftritt, und mögliche Lösungsvorschläge.
+
+#### Fehlerprotokoll
+
+1. **Fehler**: `NullReferenceException`
+   - **Beschreibung**: Ein `NullReferenceException` tritt auf, wenn auf eine nicht zugewiesene Instanz einer Klasse zugegriffen wird.
+   - **Bedingung**: Dieser Fehler kann auftreten, wenn eine der öffentlichen Variablen (`Text rannumtxt, gamepoints, infotext`, `Button fizzbtn, buzzbtn, fizzbuzzbtn, normnumbtn, newnumbtn, resetButton`, `Image backround`, `AudioSource correct, incorrect`) nicht im Unity-Editor zugewiesen wurde.
+   - **Lösung**: Überprüfen Sie, ob alle öffentlichen Variablen im Inspector zugewiesen wurden.
+
+2. **Fehler**: `IndexOutOfRangeException`
+   - **Beschreibung**: Ein `IndexOutOfRangeException` tritt auf, wenn auf ein Array-Element außerhalb des gültigen Bereichs zugegriffen wird.
+   - **Bedingung**: Dieser Fehler kann auftreten, wenn das `antworten`-Array nicht ordnungsgemäß initialisiert wird.
+   - **Lösung**: Stellen Sie sicher, dass das `antworten`-Array in der `Start`-Methode korrekt initialisiert wurde und dass der Zugriff auf das Array innerhalb des gültigen Bereichs erfolgt.
+
+3. **Fehler**: `InvalidOperationException`
+   - **Beschreibung**: Ein `InvalidOperationException` tritt auf, wenn eine ungültige Operation für den aktuellen Zustand eines Objekts durchgeführt wird.
+   - **Bedingung**: Dieser Fehler kann auftreten, wenn versucht wird, auf Audioquellen (`correct`, `incorrect`) zuzugreifen, die nicht initialisiert oder zugewiesen wurden.
+   - **Lösung**: Stellen Sie sicher, dass die Audioquellen im Inspector zugewiesen wurden und vor dem Zugriff initialisiert sind.
