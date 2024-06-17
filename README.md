@@ -25,3 +25,56 @@ Das Ziel ist, so viele Punkte wie möglich zu sammeln, indem man die Teilbarkeit
 5. Falsche Antworten bringen keine Punkte.
 
 Viel Spaß beim Spielen und Punkte sammeln!
+
+```mermaid
+graph TD
+    Start --> Init[Initialize Variables]
+    Init --> WaitForInput[Wait for Input]
+
+    WaitForInput -->|UpArrow/Button| CheckFizzBuzz
+    WaitForInput -->|DownArrow/Button| CheckNorm
+    WaitForInput -->|LeftArrow/Button| CheckFizz
+    WaitForInput -->|RightArrow/Button| CheckBuzz
+    WaitForInput -->|Space/Button| GenerateRandomNumber
+
+    CheckFizzBuzz -->|Correct| CorrectAnswer
+    CheckFizzBuzz -->|Incorrect| IncorrectAnswer
+
+    CheckFizz -->|Correct| CorrectAnswer
+    CheckFizz -->|Incorrect| IncorrectAnswer
+
+    CheckBuzz -->|Correct| CorrectAnswer
+    CheckBuzz -->|Incorrect| IncorrectAnswer
+
+    CheckNorm -->|Correct| CorrectAnswer
+    CheckNorm -->|Incorrect| IncorrectAnswer
+
+    GenerateRandomNumber --> ResetBackground
+    ResetBackground --> WaitForInput
+
+    CorrectAnswer --> UpdatePoints
+    IncorrectAnswer --> UpdateBackgroundRed
+
+    UpdatePoints --> WaitForInput
+    UpdateBackgroundRed --> WaitForInput
+
+    subgraph Logic
+        CheckFizzBuzz
+        CheckFizz
+        CheckBuzz
+        CheckNorm
+        GenerateRandomNumber
+    end
+
+    subgraph Responses
+        CorrectAnswer
+        IncorrectAnswer
+    end
+
+    subgraph States
+        Init
+        WaitForInput
+        UpdatePoints
+        UpdateBackgroundRed
+        ResetBackground
+    end
