@@ -27,54 +27,64 @@ Das Ziel ist, so viele Punkte wie möglich zu sammeln, indem man die Teilbarkeit
 Viel Spaß beim Spielen und Punkte sammeln!
 
 ```mermaid
-graph TD
-    Start --> Init[Initialize Variables]
-    Init --> WaitForInput[Wait for Input]
+classDiagram
+    class FBS_Script {
+        // Attribute
+        + Text rannumtxt
+        + Text gamepoints
+        + Text infotext
+        + Button fizzbtn
+        + Button buzzbtn
+        + Button fizzbuzzbtn
+        + Button normnumbtn
+        + Button newnumbtn
+        + Button resetButton
+        + Image backround
+        + AudioSource correct
+        + AudioSource incorrect
+        + int randnum
+        + int points
+        + int fizz = 3
+        + int buzz = 5
+        + string[] antworten
 
-    WaitForInput -->|UpArrow/Button| CheckFizzBuzz
-    WaitForInput -->|DownArrow/Button| CheckNorm
-    WaitForInput -->|LeftArrow/Button| CheckFizz
-    WaitForInput -->|RightArrow/Button| CheckBuzz
-    WaitForInput -->|Space/Button| GenerateRandomNumber
+        // Methoden
+        + void Start()
+        + void Update()
+        + void IncorrectAnswer()
+        + void CorrectAnswer()
+        + void ResetPoints()
+        + void RandomNumber()
+        + void CheckFizzBuzz()
+        + void CheckFizz()
+        + void CheckBuzz()
+        + void CheckNormalNumber()
+    }
 
-    CheckFizzBuzz -->|Correct| CorrectAnswer
-    CheckFizzBuzz -->|Incorrect| IncorrectAnswer
-
-    CheckFizz -->|Correct| CorrectAnswer
-    CheckFizz -->|Incorrect| IncorrectAnswer
-
-    CheckBuzz -->|Correct| CorrectAnswer
-    CheckBuzz -->|Incorrect| IncorrectAnswer
-
-    CheckNorm -->|Correct| CorrectAnswer
-    CheckNorm -->|Incorrect| IncorrectAnswer
-
-    GenerateRandomNumber --> ResetBackground
-    ResetBackground --> WaitForInput
-
-    CorrectAnswer --> UpdatePoints
-    IncorrectAnswer --> UpdateBackgroundRed
-
-    UpdatePoints --> WaitForInput
-    UpdateBackgroundRed --> WaitForInput
-
-    subgraph Logic
-        CheckFizzBuzz
-        CheckFizz
-        CheckBuzz
-        CheckNorm
-        GenerateRandomNumber
-    end
-
-    subgraph Responses
-        CorrectAnswer
-        IncorrectAnswer
-    end
-
-    subgraph States
-        Init
-        WaitForInput
-        UpdatePoints
-        UpdateBackgroundRed
-        ResetBackground
-    end
+    FBS_Script : rannumtxt
+    FBS_Script : gamepoints
+    FBS_Script : infotext
+    FBS_Script : fizzbtn
+    FBS_Script : buzzbtn
+    FBS_Script : fizzbuzzbtn
+    FBS_Script : normnumbtn
+    FBS_Script : newnumbtn
+    FBS_Script : resetButton
+    FBS_Script : backround
+    FBS_Script : correct
+    FBS_Script : incorrect
+    FBS_Script : randnum
+    FBS_Script : points
+    FBS_Script : fizz
+    FBS_Script : buzz
+    FBS_Script : antworten
+    FBS_Script : Start() void
+    FBS_Script : Update() void
+    FBS_Script : IncorrectAnswer() void
+    FBS_Script : CorrectAnswer() void
+    FBS_Script : ResetPoints() void
+    FBS_Script : RandomNumber() void
+    FBS_Script : CheckFizzBuzz() void
+    FBS_Script : CheckFizz() void
+    FBS_Script : CheckBuzz() void
+    FBS_Script : CheckNormalNumber() void
