@@ -92,7 +92,7 @@ class MonoBehaviour {
     FBS_Script : CheckBuzz() void
     FBS_Script : CheckNormalNumber() void
 
-MonoBehaviour --> FBS-Script
+MonoBehaviour --> FBS_Script
 
 ```
 
