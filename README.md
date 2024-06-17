@@ -88,3 +88,83 @@ classDiagram
     FBS_Script : CheckFizz() void
     FBS_Script : CheckBuzz() void
     FBS_Script : CheckNormalNumber() void
+
+```
+
+### Testergebnisse der Fizz-Buzz-App
+
+#### Allgemeine Informationen:
+- Alter des Testers: 16 (Thabo), 52 (Papa), 49 (Mama)
+- Testerfahrung:
+  - Thabo: Experte
+  - Papa: Anfänger
+  - Mama: Anfänger
+
+#### Benutzerfreundlichkeit:
+**Wie intuitiv fanden Sie die Benutzeroberfläche der App?**
+- Thabo: Mittel
+- Papa: Intuitiv
+- Mama: Sehr intuitiv
+
+**Wie gut waren die Anweisungen und Hinweise im Spiel?**
+- Thabo: Sehr hilfreich
+- Papa: Hilfreich
+- Mama: Mittel
+
+#### Spielerlebnis:
+**Wie unterhaltsam fanden Sie das Spiel insgesamt?**
+- Thabo: Unterhaltsam
+- Papa: Sehr unterhaltsam
+- Mama: Unterhaltsam
+
+**Wie herausfordernd fanden Sie das Spiel?**
+- Thabo: Mittel
+- Papa: Mittel
+- Mama: Mittel
+
+**Wie motiviert waren Sie, das Spiel immer wieder zu spielen?**
+- Thabo: Motiviert
+- Papa: Sehr motiviert
+- Mama: Motiviert
+
+#### Fehlerbehandlung und Feedback:
+**Haben Sie während des Spielens Fehler oder Abstürze erlebt?**
+- Thabo: Nein
+- Papa: Nein
+- Mama: Nein
+
+**Wie hilfreich waren die Fehlermeldungen?**
+- Thabo: Hilfreich
+- Papa: Mittel
+- Mama: Mittel
+
+**Wie schnell konnte sich das Spiel von einem Fehler erholen?**
+- Thabo: -
+- Papa: -
+- Mama: -
+
+**Wie klar und verständlich war das Feedback, das Sie im Spiel erhalten haben (z.B. visuell, auditiv)?**
+- Thabo: Klar
+- Papa: Klar
+- Mama: Klar
+
+#### Verbesserungen und Vorschläge:
+**Welche Funktionen oder Elemente haben Ihnen besonders gut gefallen?**
+- Thabo: Die visuelle Darstellung der Punktzahl.
+- Papa: Die klaren Anweisungen und die farbliche Rückmeldung.
+- Mama: Die unterschiedlichen Soundeffekte für richtige und falsche Antworten.
+
+**Welche Funktionen oder Elemente haben Ihnen nicht gefallen oder haben gefehlt?**
+- Thabo: Es fehlte eine Option, den Schwierigkeitsgrad anzupassen.
+- Papa: -
+- Mama: Die Schriftgröße der Anweisungen war zu klein.
+
+**Haben Sie Vorschläge zur Verbesserung der App?**
+- Thabo: Ein fortgeschrittener Modus für erfahrene Spieler wäre gut.
+- Papa: Eine detailliertere Anleitung für Anfänger wäre hilfreich.
+- Mama: Größere Schrift und mehr Kontraste für bessere Lesbarkeit.
+
+**Gibt es sonst noch etwas, das Sie über Ihre Erfahrung mit der Fizz-Buzz-App mitteilen möchten?**
+- Thabo: Insgesamt eine solide App.
+- Papa: Ich hatte viel Spaß und würde es wieder spielen.
+- Mama: Eine gute App, besonders geeignet für kurze Spielsessions zwischendurch.
