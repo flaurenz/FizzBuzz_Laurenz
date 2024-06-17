@@ -28,6 +28,9 @@ Viel Spaß beim Spielen und Punkte sammeln!
 
 ```mermaid
 classDiagram
+class MonoBehaviour {
+    }
+
     class FBS_Script {
         // Attribute
         + Text rannumtxt
