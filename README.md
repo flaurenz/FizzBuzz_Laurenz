@@ -92,6 +92,8 @@ class MonoBehaviour {
     FBS_Script : CheckBuzz() void
     FBS_Script : CheckNormalNumber() void
 
+MonoBehaviour --> FBS-Script
+
 ```
 
 ### Testergebnisse der Fizz-Buzz-App
